@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My shopping cart</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/myScript.js"></script>
+
+    <script>
+      const d = new Date();
+      document.write(d.toLocaleDateString());
+    </script>
+  </head>
+
+  <body style="background-image: url('images/bgnew.jpg')">
+    <!-- -->
+
+    <!-- add a logo -->
+    <img
+      class="logo"
+      src="images\cart.jfif"
+      alt="shopping cart image"
+      width="200"
+      height="200"
+    />
+
+    <!-- add a sub header -->
+    <h1>Shopping cart</h1>
+
+    <!-- add a sub header -->
+    <h2>The online shopping store</h2>
+
+    <!-- add a horizontal  line -->
+    <hr style="width: 100%" />
+    <br />
+
+    <!-- add a horizontal menu  -->
+    <div class="nav">
+      <ul class="menu">
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="news.html"> News </a></li>
+        <li><a href="contact.html"> Contact </a></li>
+        <li><a href="about us.html"> About us </a></li>
+      </ul>
+    </div>
+
+    <br /><br />
+
+    <div class="buttons newslayout">
+      <button class="btn btn1" id="btn1" onclick="loadData('btn1')">
+        iPhone SE
+      </button>
+      <button class="btn btn2" id="btn2" onclick="loadData('btn2')">
+        iPhone 12
+      </button>
+      <button class="btn btn3" id="btn3" onclick="loadData('btn3')">
+        iPhone 14 Pro Max
+      </button>
+      <button class="btn btn4" id="btn4" onclick="loadData('btn4')">
+        iPhone 15 Pro
+      </button>
+      <button class="btn btn5" id="btn5" onclick="loadData('btn5')">
+        iPhone 13
+      </button>
+      <button class="btn btn6" id="btn6" onclick="productForInLoop()">
+        Average Price
+      </button>
+      <button class="btn btn7" id="btn7" onclick="">
+        Price Higher than 1000
+      </button>
+    </div>
+    <br />
+    <hr width="100%" />
+    <div class="content">
+      <div class="photo">
+        <img src="" id="img1" />
+      </div>
+      <p class="para" id="para"></p>
+    </div>
+
+    <br /><br />
+    <hr width="100%" />
+    <br /><br />
+    <footer class="footer">
+      <center>
+        <h3>Created by Bigun Hettiarachchi</h3>
+        <a href="https://courseweb.sliit.lk/">Link to our course page </a>
+      </center>
+    </footer>
+  </body>
+</html>
